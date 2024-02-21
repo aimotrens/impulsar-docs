@@ -1,0 +1,13 @@
+start-devserver:
+  script:
+    - |
+      docker run -d --name mkdocs-dev --rm -p 80:8000 -v "$(pwd):/src" debian:bookworm /bin/bash -c "
+      apt-get update && apt-get install -y python3 pip
+      pip install --break-system-packages mkdocs mkdocs[i18n] mkdocs-material mkdocs-markdownextradata-plugin
+      cd /src
+      mkdocs serve -a 0.0.0.0:8000"
+
+stop-devserver:
+  script:
+    - |
+      docker stop mkdocs-dev
