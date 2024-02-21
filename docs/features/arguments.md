@@ -2,6 +2,8 @@
 
 You can define necessary arguments for a job using the `arguments` field. This field is a list of key-value pairs where the key is the name of the argument and the value is the description of the argument.
 
+If the argument is provided as environment variable, the value of the environment variable is used. If the argument is not provided, impulsar will ask you to provide the value before the jobs are started.
+
 ```yaml
 job:
   arguments:
