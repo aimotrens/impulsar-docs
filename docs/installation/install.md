@@ -1,12 +1,5 @@
 # Installation
 
-## Requirements
-
-- Windows or Linux
-
-
-## Installation
-
 Download the latest release, that meets your platform, from the [releases page](https://github.com/aimotrens/impulsar/releases/latest) and extract it to a directory in your PATH.
 
 ## Windows

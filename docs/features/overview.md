@@ -2,6 +2,7 @@
 
 |Feature|Description|
 | - | - |
+| [**CLI**](cli.md)                   | The command line interface.|
 | [**Script**](script.md)             | Define a script to run in the job.|
 | [**Shell**](shell.md)               | Specify the shell to run the job.|
 | [**If**](if.md)                     | Run a job conditionally.|
