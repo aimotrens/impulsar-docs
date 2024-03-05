@@ -18,6 +18,12 @@ Expand-Archive `
 Move-Item -Path impulsar.exe -Destination {an directory in your PATH}
 ```
 
+Or simply with winget:
+
+```powershell
+winget install impulsar
+```
+
 ## Linux
 
 ```bash
