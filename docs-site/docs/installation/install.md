@@ -13,7 +13,9 @@ Invoke-WebRequest `
 
 Expand-Archive `
     -Path .\impulsar_windows_amd64.zip `
-    -DestinationPath $env:USERPROFILE\impulsar
+    -DestinationPath .
+
+Move-Item -Path impulsar.exe -Destination {an directory in your PATH}
 ```
 
 ## Linux
@@ -21,8 +23,10 @@ Expand-Archive `
 ```bash
 VERSION="vX.X.X" # Replace with the latest version
 
-curl -L -o impulsar_linux_amd64.zip \
+curl -L -o impulsar_linux_amd64.tar.xz \
     https://github.com/aimotrens/impulsar/releases/download/$VERSION/impulsar_linux_amd64.tar.xz
 
-tar -xvf impulsar_linux_amd64.tar.xz -C $HOME/impulsar
+tar -xvf impulsar_linux_amd64.tar.xz
+
+mv impulsar {an directory in your PATH}
 ```
