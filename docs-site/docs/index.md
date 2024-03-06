@@ -9,6 +9,7 @@ impulsar is a tool, written in Go, to run tasks in your shell. It is a easy to u
 - **Easy to use**: Start one or more tasks (called jobs) with a single command.
 - **Job dependencies**: You can define dependencies between jobs.
 - **Foreach**: Run jobs with different sets of EnvVars in a foreach like loop.
+- **Go templating**: Use Go templating to preprocess your scripts.
 
 
 ## Quickstart

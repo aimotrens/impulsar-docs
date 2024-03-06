@@ -3,21 +3,22 @@ site_url: https://aimotrens.github.io/impulsar/
 
 nav:
   - Home: index.md
-  - Installation: installation/install.md
+  - Installation: installation.md
+  - Usage: usage.md
   - Features:
-    - Overview: features/overview.md
-    - Script: features/script.md
-    - Shell: features/shell.md
-    - If: features/if.md
-    - Conditional: features/conditional.md
-    - AllowFail: features/allow_fail.md
-    - WorkDir: features/work_dir.md
-    - Variables: features/variables.md
-    - Arguments: features/arguments.md
-    - Foreach: features/foreach.md
-    - Dependencies: features/dependencies.md
-    - Finalizers: features/finalizers.md
-
+      - Overview: features/overview.md
+      - Script: features/script.md
+      - Variables: features/variables.md
+      - Preprocessing: features/preprocessing.md
+      - Shell: features/shell.md
+      - If: features/if.md
+      - Conditional: features/conditional.md
+      - AllowFail: features/allow_fail.md
+      - WorkDir: features/work_dir.md
+      - Arguments: features/arguments.md
+      - Foreach: features/foreach.md
+      - Dependencies: features/dependencies.md
+      - Finalizers: features/finalizers.md
 
 theme:
   name: material
@@ -34,7 +35,7 @@ theme:
 
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
-      scheme: default 
+      scheme: default
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
@@ -46,7 +47,7 @@ theme:
         icon: material/brightness-4
         name: Switch to system preference
 
-extra_css: 
+extra_css:
   - assets/extra.css
 
 markdown_extensions:
@@ -64,6 +65,3 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
-
-plugins:
-  - markdownextradata

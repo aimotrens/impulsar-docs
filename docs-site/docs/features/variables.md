@@ -3,6 +3,7 @@
 You can set environment variables for a job using the `variables` field. This field is a list of key-value pairs where the key is the name of the environment variable and the value is the value of the environment variable.
 
 ```yaml
+# Bash
 job:
   variables:
     - KEY1: value1
@@ -13,10 +14,31 @@ job:
     - echo "The value of KEY2 is $KEY2"
 ```
 
+```yaml
+# Powershell
+job:
+  variables:
+    - KEY1: value1
+    - KEY2: value2
+  script:
+    - echo "This is a job with environment variables"
+    - echo "The value of KEY1 is $env:KEY1"
+    - echo "The value of KEY2 is $env:KEY2"
+```
+
 !!! note
-    **Variable expansion**
+    **Skript preprocessing**
 
-    The variables are expanded before they are passed to the shell. This means that you can use the same "variable-style" in each shell (bash, powershell, ...).
+    impulsar uses the go templating engine to preprocess the script. Use can also use an uniformed syntax for all shells. In addition, you can use all go templating features like if and range to preprocess your scripts.
 
-    Normally, an environment variable in powershell would be accessed via $env:KEY1.
-    You can use the `$KEY` variant in impulsar with powershell as well.
+```yaml
+# With go templating (all shells)
+job:
+  variables:
+    - KEY1: value1
+    - KEY2: value2
+  script:
+    - echo "This is a job with environment variables"
+    - echo "The value of KEY1 is {{.KEY1}}"
+    - echo "The value of KEY2 is {{.KEY2}}"
+```
