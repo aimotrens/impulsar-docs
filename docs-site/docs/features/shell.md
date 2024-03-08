@@ -48,7 +48,7 @@ job2:
 
 ### Docker
 
-You can run a job script with the `docker` shell and an specified image on linux and windows if you have installed docker.
+You can run a script with the `docker` shell type and a specific image on linux and windows if you have docker installed.
 
 ```yaml
 job:
@@ -61,7 +61,7 @@ job:
 
 ### SSH
 
-You can run a job script with the `ssh` shell on linux and windows if you have installed the ssh client.
+You can run a job script with the `ssh` shell type on linux and windows if you have the ssh client installed.
 This runs the script on a remote server.
 
 !!! note
