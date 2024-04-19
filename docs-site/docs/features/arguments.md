@@ -50,3 +50,22 @@ job:
     - echo "The value of ARG1 is $ARG1"
     - echo "The value of ARG2 is $ARG2"
 ```
+
+## Arguments with a set of allowed values
+
+You can define allowed values for arguments.
+If you specify a default value and an list of allowed values, the default value must be in the allowed values list.
+
+```yaml
+job:
+  arguments:
+    ARG1:
+      description: Description of ARG1
+      default: value1
+      allowed:
+        - value1
+        - value2
+        - value3
+  script:
+    - echo "Do anything with $ARG1"
+```
