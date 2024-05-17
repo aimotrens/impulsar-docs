@@ -42,3 +42,16 @@ job:
     - echo "The value of KEY1 is {{.KEY1}}"
     - echo "The value of KEY2 is {{.KEY2}}"
 ```
+
+## Exclude variables
+
+You can exclude variables from jobs, so impulsar will not pass the variable from your environment to the job.
+This is useful for docker containers that require their own version of the variables, such as JAVA_HOME.
+
+```yaml
+job:
+  variablesExcluded:
+    - JAVA_HOME
+  script:
+    - echo "run a java based app"
+```
