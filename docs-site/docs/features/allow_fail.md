@@ -16,4 +16,4 @@ job2:
     - echo "A second job"
 ```
 
-If you run this two jobs with `impulsar job1 job2`, the second job will run even if the first one fails.
+If you run this two jobs with `impulsar run job1 job2`, the second job will run even if the first one fails.
