@@ -36,3 +36,6 @@ tar -xvf impulsar_linux_amd64.tar.xz
 
 mv impulsar {an directory in your PATH}
 ```
+
+# JSON Schema
+The impuslar repository provides a [JSON schema](https://github.com/aimotrens/impulsar/blob/main/schema.json) file. You can setup up this file in most popular IDEs and benefit from suggestens.
