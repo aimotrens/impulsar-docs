@@ -11,8 +11,8 @@ job:
     ARG2: Description of ARG2
   script:
     - echo "This is a job with arguments"
-    - echo "The value of ARG1 is $ARG1"
-    - echo "The value of ARG2 is $ARG2"
+    - echo "The value of ARG1 is {{.ARG1}}"
+    - echo "The value of ARG2 is {{.ARG2}}"
 ```
 
 ## Default values for arguments
@@ -30,8 +30,8 @@ job:
       default: value2
   script:
     - echo "This is a job with arguments"
-    - echo "The value of ARG1 is $ARG1"
-    - echo "The value of ARG2 is $ARG2"
+    - echo "The value of ARG1 is {{.ARG1}}"
+    - echo "The value of ARG2 is {{.ARG2}}"
 ```
 
 ## Mixing short and long arguments definitions
@@ -47,8 +47,8 @@ job:
     ARG2: Description of ARG2
   script:
     - echo "This is a job with arguments"
-    - echo "The value of ARG1 is $ARG1"
-    - echo "The value of ARG2 is $ARG2"
+    - echo "The value of ARG1 is {{.ARG1}}"
+    - echo "The value of ARG2 is {{.ARG2}}"
 ```
 
 ## Arguments with a set of allowed values
@@ -67,5 +67,5 @@ job:
         - value2
         - value3
   script:
-    - echo "Do anything with $ARG1"
+    - echo "Do anything with {{.ARG1}}"
 ```
