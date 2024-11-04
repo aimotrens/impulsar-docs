@@ -32,6 +32,21 @@ You can also run jobs with additional arguments. To do this, you can use the `-e
 impulsar run -e "ARG1=value1" -e "ARG2=value2" job1
 ```
 
+## Running jobs from a different impulsar file
+
+By default, impulsar looks for a file named `impulsar.yml` in the current directory. If you want to run jobs from a different file, you can use the `-f` flag followed by the path to the file.
+
+```bash
+impulsar run -f /path/to/impulsar.yml job1
+```
+
+You can also use the `-f` flag followed by a dash (`-`) to read the impulsar file from the standard input.
+
+```bash
+cat /path/to/impulsar.yml | impulsar run -f - job1
+```
+ 
+
 # Other commands
 
 ## Shell completion
