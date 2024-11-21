@@ -1,6 +1,6 @@
 # Conditional
 
-The `conditional` keyword allows you to run a modify the job conditionally. This is useful if you want to run different scripts on different platforms.
+The `conditional` keyword allows you to modify the job properties conditionally. This is useful if you want to run different scripts on different platforms.
 
 You can overwrite all of the job properties, except the `name`, `conditional` and `argument` fields.
 
