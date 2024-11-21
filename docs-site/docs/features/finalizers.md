@@ -3,6 +3,8 @@
 Finalizers are a way to run a script or job after the main job has finished, regardless of its result. This is useful for cleaning up temporary files, stopping databases for unit tests, sending notifications, or other tasks that should always be executed.
 
 ```yaml
+# impulsar run build
+
 test:
   script:
     - echo "Running tests"
@@ -23,6 +25,8 @@ cleanup:
 Another, more complex and practical example is dealing with databases to run unit tests on your local machine. You can start databases in a `jobs:pre` block and stop them in a `jobs:finalize` block, to ensure that the databases are always stopped, even if the tests fail.
 
 ```yaml
+# impulsar run test
+
 test:
   jobs:pre:
     - start-test-env
