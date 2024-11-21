@@ -61,11 +61,10 @@ job:
 
 ### SSH
 
-You can run a job script with the `ssh` shell type on linux and windows if you have the ssh client installed.
-This runs the script on a remote server.
+You can run a job script with the `ssh` shell type on Linux and Windows if you have the SSH client installed. This runs the script on a remote server.
 
 !!! note
-    impulsar only supports passwordless ssh connections via ssh-agent.
+    impulsar only supports passwordless SSH connections via ssh-agent.
 
 
 ```yaml

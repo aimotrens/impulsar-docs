@@ -2,7 +2,7 @@
 
 The script feature is the most basic feature of a job.
 
-The script element is a string array. You can define multiple commands to run in the job. The commands are executed in the order they are defined. For each elemtent in the array, a new shell is started.
+The script element is an array of strings. You can define multiple commands to run in the job. The commands are executed in the order in which they are defined. For each element in the array, a new shell is started.
 
 ```yaml
 job:
